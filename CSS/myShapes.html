@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS制作几何图形</title>
+	<style type="text/css" media="screen">
+		.wrapper{width: 25%;padding:10px;float: left;height: 300px;text-align: center;}
+		
+		/*正方形*/
+		.square{width: 200px;height: 200px;background: #fed3ca;box-sizing: border-box;}
+
+		/*长方形*/
+		.retangle{width: 200px; height: 100px;background: #2eb7ed;}
+
+		/*圆形*/
+		.circle{height: 200px;width: 200px;background: #11309B;border-radius: 100%}
+
+		/*半圆形*/
+		.semicircle{height: 100px; width: 200px; background: #D65E2A; border-radius: 100px 100px 0 0;}
+
+		/*椭圆形*/
+		.oval{width:200px; height: 100px; background: #1C951A; border-radius: 100px/50px;  /*X:100px, Y:50px*/}
+
+		/*三角形*/
+		.triangle{width: 0; height: 0; border-width: 50px;border-style: solid; border-color: #8D0EEE transparent transparent;
+			/* 斜三角形 border-color: transparent #8D0EEE transparent*/ 
+			/* 下三角形 border-color: transparent transparent #8D0EEE*/}
+
+		/*梯形*/
+		.trapezoid {width: 200px;height: 0;border-width: 100px; border-style:solid;  border-color: transparent transparent #6ACFEE transparent;}
+
+		/*菱形*/
+		.diamond {width: 100px;height: 100px;-webkit-transform: rotate(45deg);transform: rotate(45deg);background: #0CCEF2;margin-left: 90px;margin-top: 30px;}
+		/*月牙*/
+		.moon{width: 200px;height: 200px;border-radius: 50%;box-shadow: 15px 15px 0 0 #0F93AA;}
+
+		/*叶子*/
+		.leaf{width: 200px;height: 200px;background: rgba(0, 255, 0, 0.5);border-radius:3px 200px;box-shadow: 2px 1px 1px rgba{0, 0, 0, .1}}
+		
+		/*书签*/
+		.bookmark{width: 0; height: 200px; border-left: 50px solid #A26D14; border-right: 50px solid #A26D14;border-bottom: 40px solid transparent;}
+
+		/*平行四边形*/
+		.parallelogram{height:100px;width:200px;background:#13AD6D; -webkit-transform:skew(-20deg);transform:skew(-20deg);}
+
+	</style>
+</head>
+<body>
+    <div class="wrapper">
+        <p>正方形</p>
+        <div class="square"></div>
+    </div>
+    <div class="wrapper">
+        <p>长方形</p>
+        <div class="retangle"></div>
+    </div>
+    <div class="wrapper">
+        <p>圆形</p>
+        <div class="circle"></div>
+    </div>
+    <div class="wrapper">
+        <p>半圆</p>
+        <div class="semicircle"></div>
+    </div>
+    <div class="wrapper">
+        <p>椭圆形</p>
+        <div class="oval"></div>
+    </div>
+    <div class="wrapper">
+        <p>三角形</p>
+        <div class="triangle"></div>
+    </div>
+    <div class="wrapper">
+        <p>梯形</p>
+        <div class="trapezoid"></div>
+    </div>
+    <div class="wrapper">
+        <p>菱形</p>
+        <div class="diamond"></div>
+    </div>
+    <div class="wrapper">
+        <p>月牙</p>
+        <div class="moon"></div>
+    </div>
+    <div class="wrapper">
+        <p>叶子</p>
+        <div class="leaf"></div>
+    </div>
+    <div class="wrapper">
+        <p>书签</p>
+        <div class="bookmark"></div>
+    </div>
+    <div class="wrapper">
+        <p>平行四边形</p>
+        <div class="parallelogram"></div>
+    </div>
+</body>
+</html>
